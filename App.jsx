@@ -2,6 +2,7 @@ App = React.createClass({
     render: function() {
         return (
             <div>
+              <Login />
               <Join />
             </div>
         );
