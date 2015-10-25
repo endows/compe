@@ -10,6 +10,7 @@ App = React.createClass({
 });
 
 if (Meteor.isClient) {
+  Meteor.subscribe('allUser')
     Meteor.startup(function () {
         $(document.body).html("<div id='container'></div>");
         React.render(<App />, document.getElementById("container"));
